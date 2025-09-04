@@ -6,7 +6,7 @@ interface BrandHeaderProps {
   className?: string
 }
 
-export function BrandHeader({ showSubtitle = true, size = "md", className = "" }: BrandHeaderProps) {
+function BrandHeader({ showSubtitle = true, size = "md", className = "" }: BrandHeaderProps) {
   const logoSizes = {
     sm: "h-8 w-8",
     md: "h-10 w-10",
@@ -57,3 +57,6 @@ export function BrandHeader({ showSubtitle = true, size = "md", className = "" }
     </div>
   )
 }
+
+export default BrandHeader
+export { BrandHeader }

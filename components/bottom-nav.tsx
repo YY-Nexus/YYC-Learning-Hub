@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Home, BookOpen, Award, User, BarChart2 } from "lucide-react"
 
-export function BottomNav() {
+function BottomNav() {
   const pathname = usePathname()
 
   const navItems = [
@@ -87,3 +87,6 @@ export function BottomNav() {
     </>
   )
 }
+
+export default BottomNav
+export { BottomNav }
